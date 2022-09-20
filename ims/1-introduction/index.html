@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio van Collin Van der Vorst
+        </title>
+        <style>
+            body {
+                background-color: lightblue;
+            }
+
+            h1, h2 {
+                color: red;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            Collin Van der Vorst
+        </h1>
+
+        <h2>
+            Introductie
+        </h2>
+
+        <p>
+            Ik ben Collin Van der Vorst, zo blij hier te zijn.
+        </p>
+
+        <h2>
+            Projecten
+        </h2>
+
+        <ul>
+            <li>
+                Project 1
+            </li>
+
+            <li>
+                Project 2
+            </li>
+        </ul>
+
+        <button>
+            Change color
+        </button>
+
+        <script>
+            var button = document.querySelector("button");
+            var title = document.querySelector("h1");
+
+            button.addEventListener("click", function() {
+                title.style.color = "green";
+            });
+        </script>
+    </body>
+</html>
+
