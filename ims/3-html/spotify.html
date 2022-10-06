@@ -1,0 +1,79 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Create a song for spotify page"> 
+        <meta name="keywords" content="spotify,artist,song,"> 
+        <meta name="author" content="Collin Van der Vorst">
+        <title> Create a song | spotify </title>
+    </head>
+    <body>
+        <!-- 
+            formulierke maken die get-call naar https://collinvandervorst.be/song.html
+
+            create a song
+            ----
+            title song
+            artiest moet je kunnen invullen
+            lengte in seconde
+            genre (pop, rock, electro)
+        -->
+        <h1>
+            Create a song
+        </h1>
+
+        <form method="get" action="https://collinvandervorst.be/song.html">
+            <!-- Title song -->
+            <label for="input_title">
+                Title
+            </label>
+            <br>
+            <input type="text" name="title" id="input_title" required>
+            <br><br>
+
+            <!-- Artist -->
+            <label for="input_artist">
+                Artist
+            </label>
+            <br>
+            <input type="text" name="artist" id="input_artist" required>
+            <br><br>
+
+            <!-- Lengte in seconde -->
+            <label for="input_length">
+                Length (in seconds)
+            </label>
+            <br>
+            <input type="number" name="length" id="input_length" required>
+            <br><br>
+
+            <!-- Genre -->
+            <label>
+                Genres
+            </label>
+            <br>
+            <input type="radio" name="genre" value="pop" id="input_genre_pop">
+            <label for="input_genre_pop">
+                Pop
+            </label>
+            <br>
+            <input type="radio" name="genre" value="rock" id="input_genre_rock">
+            <label for="input_genre_rock">
+                Rock
+            </label>
+            <br>
+            <input type="radio" name="genre" value="electro" id="input_genre_electro">
+            <label for="input_genre_electro">
+                Electro
+            </label>
+            <br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="create song">
+        </form>
+    </body>
+ </html>

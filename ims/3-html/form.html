@@ -17,14 +17,97 @@
                 Username
             </label>
             <br>
-            <input type="text" name="username" id="input_username" placeholder="Give me your username">
+            <input type="text" name="username" id="input_username" placeholder="Give me your username" value="collinvdv" required>
             <br><br>
 
             <!-- Emailadres -->
+            <label for="input_mail">
+                Email
+            </label>
+            <br>
+            <input type="email" id="input_mail" name="email" placeholder="fe user@user.com">
+            <br><br>
 
             <!-- DoB -->
+            <label for="input_dob">
+                Date of birth
+            </label>
+            <br>
+            <input type="date" id="input_dob" name="dob">
+            <br><br>
 
             <!-- Wachtwoord -->
+            <label for="input_password">
+                Password
+            </label>
+            <br>
+            <input type="password" id="input_password" name="password">
+            <br><br>
+
+            <!-- Gender -->
+            <input type="radio" name="gender" value="female" id="input_gender_female" >
+            <label for="input_gender_female">
+                Female
+            </label>
+            <br>
+            <input type="radio" name="gender" value="male" id="input_gender_male" checked="true">
+            <label for="input_gender_male">
+                Male
+            </label>
+            <br>
+            <input type="radio" name="gender" value="x" id="input_gender_x">
+            <label for="input_gender_x">
+                X
+            </label>
+            <br><br>
+
+            <!-- Gender select (of dropdown) -->
+            <select name="gender2">
+                <option value="female">
+                    1. Female
+                </option>
+                <option value="male" selected>
+                    2. Male
+                </option>
+                <option value="x">
+                    3. X
+                </option>
+            </select>
+            <br><br>
+
+            <!-- Hobbies -->
+            <input type="checkbox" name="hobby" id="input_hobby_gaming">
+            <label for="input_hobby_gaming">
+                Gaming
+            </label>
+            <br>
+            <input type="checkbox" name="hobby" id="input_hobby_football">
+            <label for="input_hobby_football">
+                football
+            </label>
+            <br>
+            <input type="checkbox" name="hobby" id="input_hobby_dancing">
+            <label for="input_hobby_dancing">
+                Dancing
+            </label>
+            <br><br>
+
+            <!-- Profile picture -->
+            <label for="input_profilepicture">
+                Profile picture
+            </label>
+            <br>
+            <input type="file" name="profile_pic" id="input_profilepicture" multiple="true">
+            <br><br>
+
+            <!-- Description -->
+            <label for="input_description">
+                Description
+            </label>
+            <br>
+            <textarea name="description" id="input_description" rows="5" col="150"></textarea>
+
+            <br><br>
 
             <!-- Submit button -->
             <input type="submit" value="Verstuur dit formulier">
