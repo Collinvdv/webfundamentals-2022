@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Create tinder profile
+        </h1>
+
+        <form action="./form.html" method="POST">
+            <!-- Username -->
+            <label for="input_username">
+                Username
+            </label>
+            <br>
+            <input type="text" name="username" id="input_username" placeholder="Give me your username" value="collinvdv">
+            <br>
+            <br>
+
+            <!-- Password -->
+            <label for="input_password">
+                Password
+            </label>
+            <br>
+            <input type="password" name="password" id="input_password" placeholder="Give me your password">
+            <br>
+            <br>
+            
+            <!-- DoB -->
+            <label for="input_dob">
+                DoB
+            </label>
+            <br>
+            <input type="date" name="dob" id="input_dob" placeholder="Give me your dob">
+            <br>
+            <br>
+
+            <!-- Height in centimeters -->
+            <label for="input_height">
+                Height
+            </label>
+            <br>
+            <input min="0" name="height" id="input_height" placeholder="Give me your height" type="number">
+            <br>
+            <br>
+            
+            <!-- Gender (F,M,X) -->
+            <div>
+                <input type="radio" name="gender" value="female" id="input_gender_f" checked>
+                <label for="input_gender_f">
+                    F
+                </label>
+            </div>
+            
+            <div>
+                <input type="radio" name="gender" value="male" id="input_gender_m">
+                <label for="input_gender_m">
+                    M
+                </label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" value="x" id="input_gender_x">
+                <label for="input_gender_x">
+                    X
+                </label>
+            </div>
+            
+            <!-- Prefered gender -->
+            <label for="input_preferred_gender">
+                Preferred gender
+            </label>
+            <select name="preferred_gender" id="input_preferred_gender">
+                <option value="female">
+                    F
+                </option>
+
+                <option value="male">
+                    M
+                </option>
+
+                <option value="x">
+                    X
+                </option>
+            </select>
+            <br>
+            <br>
+
+            <!-- Height in centimeters -->
+            <label for="input_profile_pic">
+                Profilepic
+            </label>
+            <br>
+            <input type="file" id="input_profile_pic" name="profile_pic" multiple="true">
+            <br>
+            <br>
+
+            <!-- Hobbies -->
+            <label>
+                Hobbies
+            </label>
+            <div>
+                <input type="checkbox" name="hobby_football" id="input_hobby_football" value="true" checked>
+                <label id="input_hobby_football">
+                    Football
+                </label>
+            </div>
+    
+            <div>
+                <input type="checkbox" name="hobby_dancing" id="input_hobby_dancing" value="true">
+                <label id="input_hobby_dancing">
+                    Dancing
+                </label>
+            </div>
+
+            <!--  -->
+            <label for="input_description">
+                Description
+            </label>
+            <textarea name="description" id="input_description" rows="50" cols="50"></textarea>
+            <!-- Submit -->
+            <input type="submit" value="Create profile">
+        </form>
+    </body>
+</html>
