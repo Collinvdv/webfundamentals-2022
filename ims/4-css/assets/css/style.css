@@ -1,0 +1,36 @@
+/* 
+    BODY CSS
+*/
+body {
+    background-color: black;
+    color: white;
+
+    /* background-image: url("../images/pattern.jpeg");
+    background-size: contain; */
+}
+
+/*
+    TYPOGRAPHY
+*/
+.heading {
+    color: aqua;
+    background-color: black;
+}
+
+.heading-red {
+    color: #ff1900;
+}
+
+#heading-movie {
+    color: green;
+}
+
+.face {
+    width: 150px;
+    height: 450px;
+
+    background-color: white;
+    background-image: url('../images/hp-face.jpeg');
+    background-size: contain; /* cover: zoveel mogelijk laten zien, contain: gaat alles laat zien */
+    background-repeat: no-repeat;
+}
