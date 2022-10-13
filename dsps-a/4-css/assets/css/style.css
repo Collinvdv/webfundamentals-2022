@@ -1,0 +1,28 @@
+.heading {
+    color: #f04c25;
+    text-decoration: underline;
+}
+
+body #heading-introduction {
+    color: green;
+}
+
+#heading-introduction {
+    color: magenta;
+}
+.heading-blue {
+    color: blue;
+}
+
+h2 {
+    color: pink;
+}
+
+body {
+    background-image: url("../images/pen.png");
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+
+    background-size: 
+}
