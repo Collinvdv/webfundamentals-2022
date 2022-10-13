@@ -1,0 +1,37 @@
+/*
+
+*/
+body #introduction-title {
+    color: red;
+}
+
+#introduction-title {
+    color: purple;
+}
+
+.heading {
+    color: #f04c25;
+    text-decoration: underline;
+}
+
+.subheading {
+    color: darkcyan;
+}
+
+h2 {
+    color: pink;
+}
+
+body {
+    background-color: lightpink;
+    /* background-image: url("../images/pattern.jpeg"); */
+    background-repeat: repeat-x;
+}
+
+.heading {
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #f04c25;
+
+    border: 5px solid blue;
+}
