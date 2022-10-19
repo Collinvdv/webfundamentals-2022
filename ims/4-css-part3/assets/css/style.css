@@ -1,0 +1,55 @@
+body {
+    background-color: green;
+}
+
+.tomato {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.crown {
+    height: 40px;
+    width: 40px;
+    background-color: burlywood;
+    transform: rotate(60deg);
+    
+    position: absolute;
+    top:40px;
+    left: 90px;
+
+    z-index: 10;
+}
+
+.crown.crown-green {
+    transform: rotate(80deg);
+    background-color: darkolivegreen;
+
+    z-index: 5;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-visibility-hidden {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+
+    .tomato {
+        width: 200px;
+        height: 200px;
+    }
+
+    .crown {
+        width: 20px;
+        height: 20px;
+    }
+}
