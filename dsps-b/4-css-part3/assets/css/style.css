@@ -1,0 +1,60 @@
+body {
+    background-color: greenyellow;
+}
+
+.heading {
+    color: red;
+}
+
+.tomato {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.crown {
+    height: 40px;
+    width: 40px;
+    background-color: green;
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    transform: rotate(60deg);
+
+    z-index: 10;
+}
+
+.crown-brown {
+    background-color:  brown;
+    transform: rotate(50deg);
+
+    z-index: 5;
+}
+
+.tomato-hidden {
+    /* visibility: hidden; */
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: pink;
+    }
+
+    .tomato {
+        width: 100px;
+        height: 100px;
+    }
+
+    .crown {
+        height: 20px;
+        width: 20px;
+
+        top: 20px;
+        left: 20px;
+    }
+}
