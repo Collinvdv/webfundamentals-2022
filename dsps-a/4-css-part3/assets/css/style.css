@@ -1,0 +1,69 @@
+body {
+    background-color: greenyellow
+}
+
+.heading {
+    color: red;
+    text-decoration: underline;
+}
+
+.heading-small {
+    font-size: 20px;
+}
+
+.tomato {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border-radius: 100%;
+    position: relative;
+}
+
+.crown {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    transform: rotate(60deg);
+
+    z-index: 10;
+}
+
+.crown-brown {
+    background-color: brown;
+    transform: rotate(40deg);
+
+    z-index: 5;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.is-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    .tomato {
+        width: 100px;
+        height: 100px;
+    }
+
+    .crown {
+        width: 10px;
+        height: 10px;
+
+        top: 25px;
+        left: 25px;
+    }
+}
