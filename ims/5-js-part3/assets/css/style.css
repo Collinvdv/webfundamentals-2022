@@ -1,0 +1,26 @@
+body {
+    background-color: lightsteelblue;
+}
+
+.car {
+    width: 250px;
+    display: block;
+}
+
+.car:hover {
+    cursor: pointer;
+}
+
+.car-reverse {
+    transform: scaleX(-1);
+}
+
+.finish {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    width: 20px;
+    height: 100vh;
+    background-color: white;
+
+}
