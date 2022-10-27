@@ -1,0 +1,8 @@
+.car {
+    width: 200px;
+    display: block;
+}
+
+.car-reverse {
+    transform: scaleX(-1);
+}
