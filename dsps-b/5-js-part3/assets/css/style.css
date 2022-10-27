@@ -3,6 +3,19 @@
     display: block;
 }
 
+.car:hover {
+    cursor: pointer;
+}
 .car-reverse {
     transform: scaleX(-1);
+}
+
+.finish {
+    background-color: lightslategray;
+    width: 30px;
+    height: 100vh;
+
+    position: absolute;
+    left: 400px;
+    top: 0px;
 }
