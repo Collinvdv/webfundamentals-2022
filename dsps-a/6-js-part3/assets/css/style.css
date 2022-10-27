@@ -1,3 +1,22 @@
-body {
-    background-color: red;
+.car {
+    width: 200px;
+    display: block;
+}
+
+.car:hover {
+    cursor: pointer;
+}
+
+.car-reverse {
+    transform: scaleX(-1);
+}
+
+.finish {
+    width: 20px;
+    background-color: black;
+    height: 100vh;
+
+    position: absolute;
+    left: 400px;
+    top: 0px;
 }
