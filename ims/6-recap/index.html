@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recap</title>
+        <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        Homepagina
+                    </a>
+                </li>
+                <li>
+                    <a href="https://collinvandervorst.be" target="_blank">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Body -->
+        <div id="introduction-section" class="section">
+            <h1>
+                Homepagina
+            </h1>
+
+            <p>
+                Welkom op mijn website, <br>
+                Hopelijk is het een mooie.
+            </p>
+
+        </div>
+
+        <div class="section">
+            <h2 class="heading2" id="heading-skills">
+                Skills
+            </h2>
+
+            <table border="1">
+                <!-- Heading -->
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                </tr>
+
+                <!-- Skill -->
+                <tr>
+                    <td>
+                        1
+                    </td>
+
+                    <td>
+                        Luisteren
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <form action="./register-user.php" method="GET">
+            <label for="input-username">
+                Username
+            </label>
+            <input type="text" id="input-username" name="input-username" placeholder="Give me your username" required>
+
+            <input type="submit" value="registreer gebruiker">
+        </form>
+        <br>
+        <img src="./assets/auto.png" alt="hier is mijn auto"/>
+
+        <script src="./assets/js/script.js">
+        </script>
+    </body>
+</html>

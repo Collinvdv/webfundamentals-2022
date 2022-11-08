@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+}
+
+.heading2 {
+    color: red;
+}
+
+h2 .heading2, h1 {
+    color: green !important;
+}
+
+#heading-skills {
+
+}
+
+.heading2 {
+    background-color: pink;
+
+    padding: 30px;
+
+    margin-top: 70px;
+}
+
+.heading-green {
+    background-color: green;
+}
