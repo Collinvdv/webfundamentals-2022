@@ -27,3 +27,4 @@ var goats = [
 for (var index = 0; index < goats.length; index++) {
     console.log(goats[index]);
 }
+

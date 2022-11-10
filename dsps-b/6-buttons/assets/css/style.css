@@ -1,0 +1,14 @@
+.background-green {
+    background-color: green;
+}
+
+.background-red {
+    background-color: red;
+}
+
+.smurf {
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+    border-radius: 100%;
+}
