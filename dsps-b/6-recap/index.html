@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+
+        <ul>
+            <li>
+                <a href="./index.html">
+                    Homepage
+                </a>
+            </li>
+            <li>
+                <a href="http://collinvandervorst.be" target="_blank">
+                    External portfolio
+                </a>
+            </li>
+        </ul>
+
+        <h1 id="page-title" class="heading">
+            Collin Van der Vorst Portfolio
+        </h1>
+
+        <div>
+            <h2 class="heading">
+                Introduction
+            </h2>
+    
+            <p>
+                Hello,<br>
+                Welcome to my <strong>awesome</strong> website.<br>
+                I hope you <em>like</em> it.
+            </p>
+        </div>
+
+        <h2 class="heading">
+            Skills
+        </h2>
+
+        <img src="./assets/img/animage.jpg" alt="an image">
+
+        <ol>
+            <li>
+                Programming
+            </li>
+            <li>
+                Artist
+            </li>
+        </ol>
+
+        <h2 class="heading">
+            Projects
+        </h2>
+
+        <table border="1">
+            <!-- Heading column -->
+            <tr class="row-green row-underline">
+                <th>
+                    Project name
+                </th>
+
+                <th>
+                    Period
+                </th>
+            </tr>
+
+            <!-- Project 1 -->
+            <tr class="row-green row-underline" id="row-puppy">
+                <td>
+                    Puppy webshop
+                </td>
+
+                <td>
+                    2022
+                </td>
+            </tr>
+
+            <!-- Project 2 -->
+            <tr>
+                <td>
+                    Cats webshop
+                </td>
+            
+                <td>
+                    2022
+                </td>
+            </tr>
+        </table>
+
+        <!-- Contact -->
+        <h2 class="heading">
+            Contact me
+        </h2>
+
+        <form action="./addContactMessage.php" method="GET">
+            <label for="input_fullname">
+                Firstname
+            </label>
+            <input type="text" name="fullname" id="input_fullname" placeholder="Give me your fullname">
+
+            <button type="submit">
+                Contact me
+            </button>
+        </form>
+
+        <script src="./assets/js/script.js">
+        </script>
+    </body>
+</html>
