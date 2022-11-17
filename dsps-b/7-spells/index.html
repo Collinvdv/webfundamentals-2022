@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Spells </h1>
+        <input type="text" class="js-input-spell">
+        <button  class="js-btn-spell">
+            Check the spell
+        </button>
+        <p>
+            The correct amount of spells are <span class="js-correct-result"> 0 </span>
+        </p>
+        <p>
+            The incorrect amount of spells are <span class="js-incorrect-result"> 0 </span>
+        </p>
+
+        <!-- 
+            Accio, Alohomora or Alarte Ascendare
+            + also reset the input field so it is empty
+         -->
+
+        <script>
+            // References 
+            var inputSpellEl = document.querySelector(".js-input-spell");
+            var btnSpellEl = document.querySelector(".js-btn-spell");
+            var correctResultEl = document.querySelector(".js-correct-result");
+            var incorrectResultEl = document.querySelector(".js-incorrect-result");
+
+            // score
+            var correctScore = 0;
+            var incorrectScore = 0;
+
+            // Add event listener
+            btnSpellEl.addEventListener("click", function() {
+                if (
+                    inputSpellEl.value.toLowerCase() == "accio" ||
+                    inputSpellEl.value.toLowerCase() == "alohomora" ||
+                    inputSpellEl.value.toLowerCase() == "alarte ascendare"
+                ) {
+                    correctScore++;
+                    correctResultEl.innerHTML = correctScore;
+                } else {
+                    incorrectScore++;
+                    incorrectResultEl.innerHTML = incorrectScore;
+                }
+
+                inputSpellEl.value = "";
+            });
+
+        </script>
+    </body>
+</html>
