@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Yeaaah, more information</h1>
+        <script>
+            var favFootballers = [
+                "Messi",
+                "Courtois",
+                "Haaland"
+            ];
+
+            // ADD ITEMS IN ARRAYS
+            // favFootballers.push("Verrati"); // as last item
+            // favFootballers.unshift("Mbappe"); // as first item
+            // favFootballers.splice(1, 0, "Buffon");
+
+            // REMOVE IN ARRAYS
+            // favFootballers = [ "Mbappe", "Buffon", "Messi", "Courtous", "Haaland", "Verrati"]
+            // favFootballers.pop(); // last item is removed
+            // favFootballers.shift();
+            // favFootballers = [ "Buffon", "Messi", "Courtous", "Haaland"]
+            // favFootballers.splice(2, 2);
+
+            // Loop 1 
+            // for (var index = 0; index < favFootballers.length; index ++) {
+            //     console.log(favFootballers[index]);
+            // }
+
+            // Loop 2 
+            // for (var index in favFootballers) {
+            //     console.log(favFootballers[index]);
+            // }
+
+            // Special loop ES6 
+            // favFootballers.forEach((footballer) => {
+            //     console.log(footballer);
+            // });
+
+            // var person = {
+            //     firstname: 'Collin',
+            //     lastname: 'Vorst',
+            //     age: 31,
+            //     walk: function() {
+            //         console.log(" lalalalalal I am walking ");
+            //     },
+            //     sayYourName: function() {
+            //         console.log(this.firstname + " " + this.lastname);
+            //     }
+            // }
+
+            // person.firstname = "Collina";
+            // person["firstname"] = "Collina";
+
+            // for (var key in person) {
+            //     console.log(key + " is " + person[key]);
+            // }
+
+            // person.sayYourName();
+
+            // var today = new Date();
+            // var birthday = new Date(1991, 3, 16);
+
+
+            // var day = 16;
+            // var month = 3;
+            // var year = 1991;
+            // var now = new Date();
+
+            
+
+            // for ( var x = year; x <= now.getFullYear() + 1; x++ ) {
+            //     var newYear = new Date(x, month, day);
+            //     console.log(x, getDayOfWeek(newYear.getDay()));
+            // }
+
+            // function getDayOfWeek(index) {
+            //     var daysOfWeek = [
+            //         "Sunday",
+            //         "Monday",
+            //         "Tuesday",
+            //         "Wednesday",
+            //         "Thursday",
+            //         "Friday",
+            //         "Saturday"
+            //     ]
+
+            //     return daysOfWeek[index];
+            // }
+            // 1991 - tuesday
+            // 1992 - wednesday
+            // 2022 - .....
+
+            // console.log(Math.floor(Math.random() * 10));
+
+            var timeout = setTimeout(function() {
+                console.log(" HELLO I AM STILL HERE")
+            }, 5000);
+
+            var interval = setInterval(function () {
+                console.log("YOU ARE UGLY")
+            }, 1000);
+
+            clearInterval(interval);
+
+        </script>
+    </body>
+</html>
