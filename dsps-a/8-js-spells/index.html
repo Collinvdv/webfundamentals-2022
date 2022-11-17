@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Spells </h1>
+    <p>
+        Accio, Alohomora or Alarte Ascendare
+    </p>
+    <input type="text" class="js-input-spell">
+    <button class="js-btn-spell">
+        Check the spell
+    </button>
+    <p>
+        The correct amount of spells are <span class="js-correct-result"> 0 </span>
+    </p>
+    <p>
+        The incorrect amount of spells are <span class="js-incorrect-result"> 0 </span>
+    </p>
+
+    <!-- 
+            Accio, Alohomora or Alarte Ascendare
+            + also reset the input field so it is empty
+         -->
+
+    <script>
+        // Initial variables 
+        var inputSpellEl = document.querySelector(".js-input-spell");
+        var btnSpellEl = document.querySelector(".js-btn-spell");
+        var correctResultEl = document.querySelector(".js-correct-result");
+        var incorrectResultEl = document.querySelector(".js-incorrect-result");
+
+        var spells = [
+            "Accio",
+            "Alohomora",
+            "Alarte Ascendare"
+        ];
+
+        var amountCorrectSpells = 0;
+        var amountIncorrectSpells = 0;
+
+        btnSpellEl.addEventListener("click", function() {
+            var userSpell = inputSpellEl.value;
+            var isTheSame = false;
+
+            // loop over the spells to check if the user input, is the same as a spell
+            for (var index in spells) {
+                if (spells[index].toLowerCase() == userSpell.toLowerCase()) {
+                    isTheSame = true;
+                }
+            }
+
+            // Add points if incorrect or correct result
+            if (isTheSame) {
+                amountCorrectSpells++;
+                correctResultEl.innerHTML = amountCorrectSpells;
+            } else {
+                amountIncorrectSpells++;
+                incorrectResultEl.innerHTML = amountIncorrectSpells;
+            }
+
+            // make the input empty again
+            inputSpellEl.value = "";
+        });
+    </script>
+</body>
+
+</html>

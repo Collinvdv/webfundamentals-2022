@@ -11,24 +11,58 @@
             Calculator
         </h1>
 
-        <input type="number">
-        <input type="number">
+        <input type="number" class="number1" value="10">
+        <input type="number" class="number2" value="50">
 
-        <button>
+        <button class="btnAdd">
             +
         </button>
-        <button>
+        <button class="btnMin">
             -
         </button>
-        <button>
+        <button class="btnMultiply">
             *
         </button>
-        <button>
+        <button class="btnDivide">
             /
         </button>
 
         <p>
-            The result is <span>0</span>
+            The result is <span class="result">0</span>
         </p>
+
+        <script>
+            // Referencers 
+            var number1El = document.querySelector(".number1");
+            var number2El = document.querySelector(".number2");
+
+            var btnAdd = document.querySelector(".btnAdd");
+            var btnMin = document.querySelector(".btnMin");
+            var btnMultiply = document.querySelector(".btnMultiply");
+            var btnDivide = document.querySelector(".btnDivide");
+
+            var resultEl = document.querySelector(".result");
+
+            // Event handling
+            btnAdd.addEventListener("click", function() {
+                var result = parseInt(number1El.value) + parseInt(number2El.value);
+                resultEl.innerHTML = result;
+            });
+
+            btnMin.addEventListener("click", function () {
+                var result = parseInt(number1El.value) - parseInt(number2El.value);
+                resultEl.innerHTML = result;
+            });
+
+            btnMultiply.addEventListener("click", function () {
+                var result = parseInt(number1El.value) * parseInt(number2El.value);
+                resultEl.innerHTML = result;
+            });
+
+            btnDivide.addEventListener("click", function () {
+                var result = parseInt(number1El.value) / parseInt(number2El.value);
+                resultEl.innerHTML = result;
+            });
+        </script>
     </body>
 </html>
