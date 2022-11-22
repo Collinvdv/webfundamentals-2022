@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            NEW INFORMATION
+        </h1>
+
+        <script>
+            // Oppervlakte van een rechthoek berekenen (lengte * breedte)
+            // var rechthoek = berekenOppervlakte(5, 10);
+            // console.log(rechthoek);
+            // function berekenOppervlakte(lengte, breedte) {
+            //     return lengte * breedte;
+            // }
+
+            // Arrays
+            // var goats = ["T-rex", "Conny", "Clyde"];
+            // console.log(goats.length); // 3
+            // console.log(goats[0]); // "T-rex"
+
+            // Toevogen aan arrays 
+            // goats.push("Tom"); // add as last item
+            // goats.unshift("Jef"); // add as first item
+            // goats.splice(2, 0, "Tussen t-rex en conny"); // add new item at index 2
+            
+            // Removen van items 
+            // goats.pop(); // remove lat item
+            // goats.shift(); // remove first tem
+            // goats.splice(1, 1); // item gaan deleten op een bepaalde index
+
+            // console.log(goats);
+
+            // Object 
+            // var goats = ["T-rex", "Conny", "Clyde"];
+
+            // var goatsAsObject = {
+            //     0: "T-rex",
+            //     1: "Conny",
+            //     2: "Clyde"
+            // };
+
+            // var person = {
+            //     firstname: "Collin",
+            //     lastname: "Van der Vorst",
+            //     age: 31,
+            //     sayHi: function() {
+            //         console.log("Hello, I am " + this.firstname + " " + this.lastname);
+            //     }
+            // };
+
+            // person.sayHi();
+
+            // console.log(person.firstname);
+            // console.log(person["firstname"]);
+
+            // for (var attributeName in person) {
+            //     console.log(attributeName + " is " + person[attributeName])
+            // }
+
+            var birthdate = new Date(1991, 3, 16);
+            console.log(birthdate.getTime())
+            var now = new Date();
+            var weeks = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ];
+            for (var year = birthdate.getFullYear(); year <= now.getFullYear() + 10; year++) {
+                birthdate.setFullYear(year);
+                console.log(year + " : " + weeks[birthdate.getDay()]);
+            }
+
+            console.log(Math.floor(Math.random() * 11));
+            // getDay()
+            // setFullYear()
+            // getFullYear()
+            // 1991 : TUESDAY
+            // 1992 : THURSDAY
+            // 2022 : 
+
+            // set timeout, gebruiken we als we x aantal milli seconden wil wachten
+            var timeout = setTimeout(function() {
+                console.log("IK HEB 5 SECONDEN GEWACHT EN IETS UITGEVORD");
+                alert("T MOEST AL AF ZIJN");
+            }, 90000);
+
+            // clearTimeout(timeout);
+
+            var interval = setInterval(function() {
+                console.log("RUN EVERY SECOND");
+            }, 1000);
+
+            // clearInterval(interval);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Spell
+        </h1>
+
+        <p class="js-spells">
+            Accio, Alohomora, Alarte Ascendare
+        </p>
+
+        <input type="text" class="js-input-spell">
+        <button class="js-btn-check">
+            Check the spell
+        </button>
+
+        <p>
+            Correct amount of spells: <span class="js-correct">0</span>
+        </p>
+        <p>
+            InCorrect amount of spells: <span class="js-incorrect">0</span>
+        </p>
+
+        <script>
+            var inputSpellEl = document.querySelector(".js-input-spell");
+            var btnEl = document.querySelector(".js-btn-check");
+            var correctEl = document.querySelector(".js-correct");
+            var incorrectEl = document.querySelector(".js-incorrect");
+
+            var spells = [
+                "Accio",
+                "Alohomora",
+                "Alarte Ascendare",
+                "Wingardium liviosa"
+            ];
+
+            document.querySelector(".js-spells").innerHTML = spells.toString()
+
+            var correct = 0;
+            var incorrect = 0;
+
+            btnEl.addEventListener("click", function() {
+                var inputSpell = inputSpellEl.value;
+                // has match is false tot het tegen deel is bewezen 
+                var hasMatch = false;
+
+                for (var index in spells){
+                    if (inputSpell.toLowerCase() == spells[index].toLowerCase()) {
+                        // het tegendeel is bewezen ik heb ne match
+                        hasMatch = true;
+                    }
+                }
+
+                // punten systeem
+                if (hasMatch) {
+                    correct++;
+                    correctEl.innerHTML = correct;
+                } else {
+                    incorrect++;
+                    incorrectEl.innerHTML = incorrect;
+                }
+
+                inputSpellEl.value = null;
+            })
+        </script>
+    </body>
+</html>

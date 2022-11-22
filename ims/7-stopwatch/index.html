@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Stopwatch
+        </h1>
+
+        <p class="js-seconds">
+            0
+        </p>
+
+        <button class="js-btn-start">
+            Start
+        </button>
+
+        <button class="js-btn-stop">
+            Stop
+        </button>
+
+        <script>
+            // References to html
+            var secondsEl = document.querySelector(".js-seconds");
+            var btnStartEl = document.querySelector(".js-btn-start");
+            var btnStopEl = document.querySelector(".js-btn-stop");
+            var stopwatch;
+
+            btnStartEl.addEventListener("click", function() {
+                var seconds = 0;
+
+                stopwatch = setInterval(function() {
+                    seconds++;
+
+                    secondsEl.innerHTML = seconds;
+                }, 1000)
+            });
+
+            btnStopEl.addEventListener("click", function () {
+                clearInterval(stopwatch);
+            });
+          
+        </script>
+    </body>
+</html>

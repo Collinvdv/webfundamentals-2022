@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Calculator
+        </h1>
+
+        <p>
+            Result: <span class="js-result">0</span>
+        </p>
+
+        <button class="js-btn-plus">
+            +1
+        </button>
+        <button class="js-btn-min">
+            -1
+        </button>
+
+        <script>
+            var resultEl = document.querySelector(".js-result");
+            var btnMinEl = document.querySelector(".js-btn-min");
+            var btnPlusEl = document.querySelector(".js-btn-plus");
+            var counter = 0;
+
+            btnMinEl.addEventListener("click", function() {
+                counter--;
+                resultEl.innerHTML = counter;
+            });
+
+            btnPlusEl.addEventListener("click", function () {
+                counter++;
+                resultEl.innerHTML = counter;
+            });
+            
+        </script>
+    </body>
+</html>
