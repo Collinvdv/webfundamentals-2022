@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            OMG EEN API CALL
+        </h1>
+
+        <form class="js-add-form">
+            <label>
+                Customer ID
+            </label>
+            <input type="text" name="customerID">
+            <br>
+        
+            <label>
+                Customer name
+            </label>
+            <input type="text" name="customerName">
+            <br>
+        
+            <input type="submit" value="Add customer" />
+        </form>
+
+        <script>
+            var formEl = document.querySelector(".js-add-form");
+
+            formEl.addEventListener("submit", function(e) {
+                // Formulier niet gaat submitten
+                e.preventDefault();
+
+                var customerID = formEl.elements["customerID"].value;
+                var customerName = formEl.elements["customerName"].value;
+                var url = 'http://localhost:8888/employeeAdd.php?customerID=' + customerID + "&customerName=" + customerName;
+                console.log(url);
+                fetch(url)
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (data.response == "Item added") {
+                            alert("ITEM IS TOEGEVOEGD");
+                        } else {
+                            alert("NIET GELUKT");
+                        }
+                    });
+
+            });
+        </script>
+
+    </body>
+</html>

@@ -12,9 +12,8 @@ if ($conn == false) {
     die();
 }
 
-$query = "SELECT FirstName, LastName FROM Employees;";
+$query = "SELECT ". $_GET["columns"]." FROM ". $_GET["table"] . ";";
 $rows = mysqli_query($conn, $query)->fetch_all(MYSQLI_ASSOC);
-var_dump($rows);
 $conn->close();
 ?>
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ $conn->close();
 
 <body>
     <h1>
-        Employees
+        <?php echo $_GET["table"] ?>
     </h1>
 
     <table border="1">
