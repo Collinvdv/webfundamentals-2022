@@ -25,28 +25,34 @@
         die();
     }
 
-    $query = "SELECT CustomerID, CompanyName, ContactName FROM Customers;";
+    $table = $_GET["table"];
+    $columns = $_GET["columns"];
+
+    echo $table;
+    echo $columns;
+
+    $query = "SELECT $columns FROM $table;";
     $customers = mysqli_query($conn, $query)->fetch_all(MYSQLI_ASSOC);
     ?>
 
     <table border="1">
         <tr>
-            <th>
-                CustomerID
-            </th>
-            <th>
-                CompanyName
-            </th>
-            <th>
-                ContactName
-            </th>
+            <?php
+                foreach($customers[0] as $columnName => $firstCustomer) {
+            ?>
+                <th>
+                    <?php echo $columnName; ?>
+                </th>
+            <?php
+                }
+            ?>
         </tr>
 
         <?php
         foreach ($customers as $customer) {
         ?>
             <tr>
-                <?php 
+                <?php
                     foreach ($customer as $columnName => $columnValue) {
                 ?>
                     <td>
