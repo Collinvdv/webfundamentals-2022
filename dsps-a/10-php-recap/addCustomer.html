@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            Add Customer
+        </h1>
+
+        <form class="js-form">
+            <label>Customer id</label>
+            <input type="text" name="customerID" id="js-id">
+            <br>
+            <label>Customer name</label>
+            <input type="text" name="customerName" id="js-name">
+            <br>
+            <input type="submit">
+        </form>
+
+        <script>
+            var formEl = document.querySelector(".js-form");
+            
+            formEl.addEventListener("submit", function(e) {
+                e.preventDefault();
+                var id = document.querySelector("#js-id").value;
+                var name = document.querySelector("#js-name").value;
+                
+                fetch('http://localhost:8888/api/addCustomer.php?customerID='+id+"&customerName="+name)
+                    .then((response) => response.json())
+                    .then((data) => console.log(data));
+                console.log(id);
+                console.log(name);
+            });
+        </script>
+    </body>
+</html>
