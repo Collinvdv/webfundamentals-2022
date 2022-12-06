@@ -29,7 +29,7 @@ function addCards() {
     ];
 
     // shuffle cards 
-    // cards = shuffleCards(cards);
+    cards = shuffleCards(cards);
 
     // loop over every card
     for (var index = 0; index < cards.length; index++) {
@@ -55,7 +55,6 @@ function shuffleCards(cards) {
         shuffleCards.push(cards[randomCard]);
 
         cards.splice(randomCard, 1);
-        console.log(cards);
     }
 
     return shuffleCards;
