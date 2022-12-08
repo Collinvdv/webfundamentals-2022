@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    padding: 40px;
+}
+
+.c-game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-card {
+    width: 25%;
+}
+
+p {
+    color: white;
+}
