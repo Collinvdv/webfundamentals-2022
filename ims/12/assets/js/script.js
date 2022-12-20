@@ -14,8 +14,6 @@ for (var index = 0; index < 10; index++) {
 }
 
 
-
-
 function addFlag(number) {
     var flagEl = document.createElement("div");
     flagEl.classList.add("flag");
