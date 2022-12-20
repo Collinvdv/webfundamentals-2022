@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Navigatie -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html" target="_blank">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Title -->
+        <h1>
+            Contact
+        </h1>
+
+        <!-- Introductie blok -->
+        <form action="./contact.html" method="GET">
+            <div>
+                <label for="input_fn">
+                    Firstname
+                </label>
+                <br>
+                <input type="text" name="firstname" id="input_fn" placeholder="Give your FN" required>
+            </div>
+
+            <div>
+                <label for="input_password">
+                    Password
+                </label>
+                <br>
+                <input type="password" name="password" id="input_password" placeholder="Give your password">
+            </div>
+
+            <div>
+                <label for="input_file">
+                    file
+                </label>
+                <br>
+                <input type="file" name="file" id="input_file" placeholder="Give your password" multiple>
+            </div>
+
+            <div>
+                <label>
+                    Gender
+                </label>
+                <select name="gender">
+                    <option value="female">F</option>
+                    <option value="male">M</option>
+                </select>
+            </div>
+
+            <div>
+                <label>
+                    Gender 2
+                </label>
+                <input type="radio" name="gender2" value="male" id="input_gender2_male">
+                <label for="input_gender2_male">
+                    Male
+                </label>
+                <input type="radio" name="gender2" value="female">
+            </div>
+
+            <div>
+                <label>
+                    Hobbies
+                </label>
+                <input type="checkbox" name="gender2" value="male">
+                <input type="checkbox" name="gender2" value="female">
+            </div>
+                    <textarea name="description"></textarea>
+            <input type="submit" value="send message">
+        </form>
+    </body>
+</html>

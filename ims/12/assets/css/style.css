@@ -1,0 +1,26 @@
+.flag {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    border-radius: 100%;
+}
+body {
+    background-color:aquamarine;
+}
+
+.flags {
+    display: flex;
+    flex-wrap: wrap;
+}
